@@ -1,0 +1,2014 @@
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-03-30 17:31:40) [GET]
+
+NameError (uninitialized constant ActiveLdap):
+  app/models/user.rb:1
+  app/controllers/user_controller.rb:4:in `index'
+
+Rendered rescues/_trace (165.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-03-30 18:09:52) [GET]
+Attempting to reconnect
+  [4;36;1mLDAP: connect: FAILED (0.0ms)[0m: [0;1m{:with_start_tls=>false, :error=>"Net::LDAP::LdapError", :error_message=>"Server 127.0.0.1 refused connection on port 389.", :uri=>"ldap://127.0.0.1"}[0m
+Reconnect to server failed: Server 127.0.0.1 refused connection on port 389.
+Reconnect to server failed backtrace:
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/net_ldap.rb:37:in `connect'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:51:in `connect'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/net_ldap.rb:24:in `connect'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:582:in `reconnect'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:574:in `loop'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:574:in `reconnect'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:611:in `reconnect_if_need'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/timeout_stub.rb:6:in `alarm'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:321:in `with_timeout'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:610:in `reconnect_if_need'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:272:in `operation'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:169:in `search'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/net_ldap.rb:66:in `search'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/operations.rb:65:in `search'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/operations.rb:282:in `find_every'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/operations.rb:226:in `find'
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/controllers/user_controller.rb:4:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/ben/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/ben/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+Attempting to reconnect
+  [4;35;1mLDAP: connect: FAILED (0.0ms)[0m: [0m{:with_start_tls=>false, :error=>"Net::LDAP::LdapError", :error_message=>"Server 127.0.0.1 refused connection on port 389.", :uri=>"ldap://127.0.0.1"}[0m
+Reconnect to server failed: Server 127.0.0.1 refused connection on port 389.
+Reconnect to server failed backtrace:
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/net_ldap.rb:37:in `connect'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:51:in `connect'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/net_ldap.rb:24:in `connect'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:582:in `reconnect'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:574:in `loop'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:574:in `reconnect'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:611:in `reconnect_if_need'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/timeout_stub.rb:6:in `alarm'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:321:in `with_timeout'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:610:in `reconnect_if_need'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:272:in `operation'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/base.rb:169:in `search'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/adapter/net_ldap.rb:66:in `search'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/operations.rb:65:in `search'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/operations.rb:282:in `find_every'
+/Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/operations.rb:226:in `find'
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/controllers/user_controller.rb:4:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/ben/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/ben/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActiveLdap::ConnectionError (Giving up trying to reconnect to LDAP server.):
+  activeldap (1.2.1) lib/active_ldap/adapter/base.rb:597:in `reconnect'
+  activeldap (1.2.1) lib/active_ldap/adapter/base.rb:574:in `loop'
+  activeldap (1.2.1) lib/active_ldap/adapter/base.rb:574:in `reconnect'
+  activeldap (1.2.1) lib/active_ldap/adapter/base.rb:611:in `reconnect_if_need'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  activeldap (1.2.1) lib/active_ldap/timeout_stub.rb:6:in `alarm'
+  activeldap (1.2.1) lib/active_ldap/adapter/base.rb:321:in `with_timeout'
+  activeldap (1.2.1) lib/active_ldap/adapter/base.rb:610:in `reconnect_if_need'
+  activeldap (1.2.1) lib/active_ldap/adapter/base.rb:272:in `operation'
+  activeldap (1.2.1) lib/active_ldap/adapter/base.rb:169:in `search'
+  activeldap (1.2.1) lib/active_ldap/adapter/net_ldap.rb:66:in `search'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:65:in `search'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:282:in `find_every'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:226:in `find'
+  app/controllers/user_controller.rb:4:in `index'
+
+Rendered rescues/_trace (51.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-03-30 18:13:18) [GET]
+Attempting to reconnect
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-03-30 18:14:08) [GET]
+Attempting to reconnect
+  [4;36;1mLDAP: connect (45.0ms)[0m: [0;1m{:with_start_tls=>false, :uri=>"ldap://192.168.180.116"}[0m
+  [4;35;1mLDAP: bind (97.3ms)[0m: [0m{:dn=>"cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk"}[0m
+Bound to ldap://192.168.180.116 by simple as cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk
+  [4;35;1mLDAP: search (6830.4ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+  [4;35;1mLDAP: search (165.5ms)[0m: [0m{:attributes=>["subschemaSubentry"], :filter=>"objectClass=*", :base=>"", :scope=>:base}[0m
+  [4;35;1mLDAP: search (822.8ms)[0m: [0m{:attributes=>["objectClasses", "attributeTypes", "matchingRules", "matchingRuleUse", "dITStructureRules", "dITContentRules", "nameForms", "ldapSyntaxes"], :filter=>"(objectClass=subschema)", :base=>"cn=Subschema", :scope=>:base}[0m
+Rendering user/index
+
+ActionView::TemplateError (undefined method `user_link' for #<ActionView::Base:0x103408ea0>) on line #6 of app/views/user/index.rhtml:
+3: <% else -%>
+4: <ul>
+5: <%   @users.each do |user| -%>
+6:   <li><%= user_link(user, true) %></li>
+7: <%   end -%>
+8: </ul>
+9: <% end -%>
+
+    app/views/user/index.rhtml:6:in `_run_rhtml_app47views47user47index46rhtml'
+    app/views/user/index.rhtml:5:in `each'
+    app/views/user/index.rhtml:5:in `_run_rhtml_app47views47user47index46rhtml'
+
+Rendered rescues/_trace (52.1ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-03-30 18:15:43) [GET]
+Attempting to reconnect
+  [4;36;1mLDAP: connect (467.2ms)[0m: [0;1m{:with_start_tls=>false, :uri=>"ldap://192.168.180.116"}[0m
+  [4;35;1mLDAP: bind (259.9ms)[0m: [0m{:dn=>"cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk"}[0m
+Bound to ldap://192.168.180.116 by simple as cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk
+  [4;35;1mLDAP: search (5879.5ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+  [4;35;1mLDAP: search (1195.1ms)[0m: [0m{:attributes=>["subschemaSubentry"], :filter=>"objectClass=*", :base=>"", :scope=>:base}[0m
+  [4;35;1mLDAP: search (1674.3ms)[0m: [0m{:attributes=>["objectClasses", "attributeTypes", "matchingRules", "matchingRuleUse", "dITStructureRules", "dITContentRules", "nameForms", "ldapSyntaxes"], :filter=>"(objectClass=subschema)", :base=>"cn=Subschema", :scope=>:base}[0m
+Rendering user/index
+Completed in 10686ms (View: 28, LDAP: 9476, DB: 0) | 200 OK [http://localhost/user]
+
+
+Processing GroupController#index (for 127.0.0.1 at 2010-03-30 18:16:38) [GET]
+Attempting to reconnect
+  [4;36;1mLDAP: connect (430.4ms)[0m: [0;1m{:with_start_tls=>false, :uri=>"ldap://192.168.180.116"}[0m
+  [4;35;1mLDAP: bind (579.3ms)[0m: [0m{:dn=>"cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk"}[0m
+Bound to ldap://192.168.180.116 by simple as cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk
+  [4;35;1mLDAP: search (7312.6ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(cn=*)(objectClass=top)): attributes: []
+  [4;35;1mLDAP: search (489.9ms)[0m: [0m{:attributes=>["subschemaSubentry"], :filter=>"objectClass=*", :base=>"", :scope=>:base}[0m
+  [4;35;1mLDAP: search (1753.9ms)[0m: [0m{:attributes=>["objectClasses", "attributeTypes", "matchingRules", "matchingRuleUse", "dITStructureRules", "dITContentRules", "nameForms", "ldapSyntaxes"], :filter=>"(objectClass=subschema)", :base=>"cn=Subschema", :scope=>:base}[0m
+Rendering group/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #1 of app/views/group/index.rhtml:
+1: <% if @group.empty? -%>
+2: <p><%= "No user." %></p>
+3: <% else -%>
+4: <ul>
+
+    app/views/group/index.rhtml:1:in `_run_rhtml_app47views47group47index46rhtml'
+
+Rendered rescues/_trace (51.1ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupController#index (for 127.0.0.1 at 2010-03-30 18:18:33) [GET]
+
+SyntaxError (/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/models/group.rb:4: syntax error, unexpected tASSOC, expecting kEND
+               :classes => ['top', 'posixGroup']
+                          ^):
+  app/controllers/group_controller.rb:4:in `index'
+
+Rendered rescues/_trace (52.1ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupController#index (for 127.0.0.1 at 2010-03-30 18:18:56) [GET]
+Attempting to reconnect
+  [4;36;1mLDAP: connect (667.8ms)[0m: [0;1m{:with_start_tls=>false, :uri=>"ldap://192.168.180.116"}[0m
+  [4;35;1mLDAP: bind (243.9ms)[0m: [0m{:dn=>"cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk"}[0m
+Bound to ldap://192.168.180.116 by simple as cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk
+  [4;35;1mLDAP: search (1124.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=*)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+  [4;35;1mLDAP: search (546.0ms)[0m: [0m{:attributes=>["subschemaSubentry"], :filter=>"objectClass=*", :base=>"", :scope=>:base}[0m
+  [4;35;1mLDAP: search (699.7ms)[0m: [0m{:attributes=>["objectClasses", "attributeTypes", "matchingRules", "matchingRuleUse", "dITStructureRules", "dITContentRules", "nameForms", "ldapSyntaxes"], :filter=>"(objectClass=subschema)", :base=>"cn=Subschema", :scope=>:base}[0m
+Rendering group/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #1 of app/views/group/index.rhtml:
+1: <% if @group.empty? -%>
+2: <p><%= "No user." %></p>
+3: <% else -%>
+4: <ul>
+
+    app/views/group/index.rhtml:1:in `_run_rhtml_app47views47group47index46rhtml'
+
+Rendered rescues/_trace (50.7ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupController#index (for 127.0.0.1 at 2010-03-30 18:28:57) [GET]
+  [4;35;1mLDAP: search (727.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=*)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering group/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #1 of app/views/group/index.rhtml:
+1: <% if @group.empty? -%>
+2: <p><%= "No user." %></p>
+3: <% else -%>
+4: <ul>
+
+    app/views/group/index.rhtml:1:in `_run_rhtml_app47views47group47index46rhtml'
+
+Rendered rescues/_trace (164.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-03-30 18:30:17) [GET]
+  [4;35;1mLDAP: search (32144.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+Rendering user/index
+Completed in 33346ms (View: 93, LDAP: 36154, DB: 0) | 200 OK [http://localhost/user]
+
+
+Processing GroupController#index (for 127.0.0.1 at 2010-03-30 18:31:24) [GET]
+  [4;35;1mLDAP: search (4316.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=*)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering group/index
+Completed in 4347ms (View: 6, LDAP: 4316, DB: 0) | 200 OK [http://localhost/group]
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-03-30 18:35:13) [GET]
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (21469.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+Rendering user/index
+Completed in 22637ms (View: 151, LDAP: 21469, DB: 0) | 200 OK [http://localhost/user]
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 18:45:43) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+
+ActiveLdap::EntryNotFound (Couldn't find User without a DN):
+  activeldap (1.2.1) lib/active_ldap/operations.rb:307:in `find_from_dns'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:228:in `find'
+  app/controllers/user_controller.rb:8:in `show'
+
+Rendered rescues/_trace (42.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 19:57:04) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+
+ActiveLdap::EntryNotFound (Couldn't find User without a DN):
+  activeldap (1.2.1) lib/active_ldap/operations.rb:307:in `find_from_dns'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:228:in `find'
+  app/controllers/user_controller.rb:8:in `show'
+
+Rendered rescues/_trace (41.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 19:57:32) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+
+ArgumentError (Unknown key(s): uid):
+  activeldap (1.2.1) lib/active_ldap/operations.rb:107:in `validate_search_options'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:28:in `search'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:282:in `find_every'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:255:in `find_initial'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:220:in `find'
+  app/controllers/user_controller.rb:8:in `show'
+
+Rendered rescues/_trace (43.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 19:57:34) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+
+ArgumentError (Unknown key(s): uid):
+  activeldap (1.2.1) lib/active_ldap/operations.rb:107:in `validate_search_options'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:28:in `search'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:282:in `find_every'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:255:in `find_initial'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:220:in `find'
+  app/controllers/user_controller.rb:8:in `show'
+
+Rendered rescues/_trace (41.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 19:58:17) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (784.5ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=7132617)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering user/show
+Completed in 898ms (View: 101, LDAP: 785, DB: 0) | 200 OK [http://localhost/user/show/7132617]
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 19:58:48) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+
+ActiveLdap::EntryNotFound (Couldn't find User without a DN):
+  activeldap (1.2.1) lib/active_ldap/operations.rb:307:in `find_from_dns'
+  activeldap (1.2.1) lib/active_ldap/operations.rb:228:in `find'
+  app/controllers/user_controller.rb:8:in `show'
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 19:58:59) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (777.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=7132617)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering user/show
+Completed in 791ms (View: 2, LDAP: 778, DB: 0) | 200 OK [http://localhost/user/show/7132617]
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 19:59:41) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (764.0ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=7132617)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering user/show
+Completed in 776ms (View: 1, LDAP: 764, DB: 0) | 200 OK [http://localhost/user/show/7132617]
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 19:59:44) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (793.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=7132617)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering user/show
+Completed in 807ms (View: 1, LDAP: 793, DB: 0) | 200 OK [http://localhost/user/show/7132617]
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 19:59:56) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (850.7ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=7132617)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering user/show
+ERROR: compiling _run_rhtml_app47views47user47show46rhtml RAISED compile error
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:24: syntax error, unexpected kDO, expecting kEND
+;    @groups do |group| 
+               ^
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:25: syntax error, unexpected tSTRING_BEG, expecting kEND
+@output_buffer.concat "\t  <li>"; @output_buffer.conc...
+                       ^
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:29: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_rhtml_app47views47user47show46rhtml(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<p>\n  <b>Student ID:</b>\n  "
+
+; @output_buffer.concat((h @user.uid ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Lastname:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @user.sn ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>First Name:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @user.givenName ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Email:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @user.mail ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Groups:</b>\n  <ul>\n\t"
+
+
+
+
+
+;    @groups do |group| 
+@output_buffer.concat "\t  <li>"; @output_buffer.concat(( group.cn ).to_s); @output_buffer.concat "</li>\n\t"
+;    end 
+@output_buffer.concat "  </ul>\n</p>"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:29:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/ben/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/ben/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/ben/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/ben/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:24: syntax error, unexpected kDO, expecting kEND
+;    @groups do |group| 
+               ^
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:25: syntax error, unexpected tSTRING_BEG, expecting kEND
+@output_buffer.concat "\t  <li>"; @output_buffer.conc...
+                       ^
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:29: syntax error, unexpected kENSURE, expecting $end) on line #24 of app/views/user/show.rhtml:
+21: <p>
+22:   <b>Groups:</b>
+23:   <ul>
+24: 	<%   @groups do |group| -%>
+25: 	  <li><%= group.cn %></li>
+26: 	<%   end -%>
+27:   </ul>
+
+    app/views/user/show.rhtml:29:in `compile!'
+
+Rendered rescues/_trace (44.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 19:59:59) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (735.0ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=7132617)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering user/show
+ERROR: compiling _run_rhtml_app47views47user47show46rhtml RAISED compile error
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:24: syntax error, unexpected kDO, expecting kEND
+;    @groups do |group| 
+               ^
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:25: syntax error, unexpected tSTRING_BEG, expecting kEND
+@output_buffer.concat "\t  <li>"; @output_buffer.conc...
+                       ^
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:29: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_rhtml_app47views47user47show46rhtml(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<p>\n  <b>Student ID:</b>\n  "
+
+; @output_buffer.concat((h @user.uid ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Lastname:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @user.sn ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>First Name:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @user.givenName ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Email:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @user.mail ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>Groups:</b>\n  <ul>\n\t"
+
+
+
+
+
+;    @groups do |group| 
+@output_buffer.concat "\t  <li>"; @output_buffer.concat(( group.cn ).to_s); @output_buffer.concat "</li>\n\t"
+;    end 
+@output_buffer.concat "  </ul>\n</p>"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:29:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/ben/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/ben/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/ben/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/ben/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:24: syntax error, unexpected kDO, expecting kEND
+;    @groups do |group| 
+               ^
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:25: syntax error, unexpected tSTRING_BEG, expecting kEND
+@output_buffer.concat "\t  <li>"; @output_buffer.conc...
+                       ^
+/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/views/user/show.rhtml:29: syntax error, unexpected kENSURE, expecting $end) on line #24 of app/views/user/show.rhtml:
+21: <p>
+22:   <b>Groups:</b>
+23:   <ul>
+24: 	<%   @groups do |group| -%>
+25: 	  <li><%= group.cn %></li>
+26: 	<%   end -%>
+27:   </ul>
+
+    app/views/user/show.rhtml:29:in `compile!'
+
+Rendered rescues/_trace (46.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 20:00:12) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (776.5ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=7132617)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering user/show
+  [4;35;1mLDAP: search (357.5ms)[0m: [0m{:attributes=>[], :filter=>"(&(memberUid=7132617)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 1304ms (View: 515, LDAP: 2720, DB: 0) | 200 OK [http://localhost/user/show/7132617]
+
+
+Processing UserController#show (for 127.0.0.1 at 2010-03-30 20:14:10) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (702.5ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=7132617)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering user/show
+  [4;35;1mLDAP: search (310.5ms)[0m: [0m{:attributes=>[], :filter=>"(&(memberUid=7132617)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 1038ms (View: 323, LDAP: 1013, DB: 0) | 200 OK [http://localhost/user/show/7132617]
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-03-30 20:16:25) [GET]
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (6727.6ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+Rendering user/index
+
+ActionView::TemplateError (undefined method `cn' for nil:NilClass) on line #6 of app/views/user/index.rhtml:
+3: <% else -%>
+4: <ul>
+5: <%   @users.each do |user| -%>
+6:   <li><%= link_to @user.cn, @user %></li>
+7: <%   end -%>
+8: </ul>
+9: <% end -%>
+
+    app/views/user/index.rhtml:6:in `_run_rhtml_app47views47user47index46rhtml'
+    app/views/user/index.rhtml:5:in `each'
+    app/views/user/index.rhtml:5:in `_run_rhtml_app47views47user47index46rhtml'
+
+Rendered rescues/_trace (49.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-03-30 20:16:45) [GET]
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (6069.4ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+Rendering user/index
+
+ActionView::TemplateError (undefined method `user_path' for #<ActionView::Base:0x103102eb8>) on line #6 of app/views/user/index.rhtml:
+3: <% else -%>
+4: <ul>
+5: <%   @users.each do |user| -%>
+6:   <li><%= link_to user.cn, user %></li>
+7: <%   end -%>
+8: </ul>
+9: <% end -%>
+
+    app/views/user/index.rhtml:6:in `_run_rhtml_app47views47user47index46rhtml'
+    app/views/user/index.rhtml:5:in `each'
+    app/views/user/index.rhtml:5:in `_run_rhtml_app47views47user47index46rhtml'
+
+Rendered rescues/_trace (54.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-03-30 20:31:02) [GET]
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (5834.7ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+Rendering user/index
+Completed in 7142ms (View: 255, LDAP: 18632, DB: 0) | 200 OK [http://localhost/user]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-03-30 20:31:12) [GET]
+  Parameters: {"id"=>"1111116"}
+
+NameError (uninitialized constant UsersController):
+  
+
+Rendered rescues/_trace (190.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-03-30 20:32:25) [GET]
+  Parameters: {"id"=>"1111116"}
+
+NameError (uninitialized constant UsersController):
+  
+
+Rendered rescues/_trace (34.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-30 20:33:40) [GET]
+
+NameError (uninitialized constant UserController):
+  
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-03-30 20:33:44) [GET]
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+
+LoadError (Expected /Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/models/user.rb to define User):
+  app/controllers/users_controller.rb:4:in `index'
+
+Rendered rescues/_trace (41.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-03-30 20:33:57) [GET]
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (5993.8ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+Rendering users/index
+Completed in 7445ms (View: 338, LDAP: 5994, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-30 20:34:07) [GET]
+  Parameters: {"id"=>"1111116"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (784.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=1111116)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering users/show
+  [4;35;1mLDAP: search (56.4ms)[0m: [0m{:attributes=>[], :filter=>"(&(memberUid=1111116)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 865ms (View: 68, LDAP: 841, DB: 0) | 200 OK [http://localhost/users/1111116]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-30 20:34:23) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (705.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=7132617)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering users/show
+  [4;35;1mLDAP: search (320.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(memberUid=7132617)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 1052ms (View: 333, LDAP: 1026, DB: 0) | 200 OK [http://localhost/users/7132617]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-30 20:38:58) [GET]
+  Parameters: {"id"=>"7132617"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (801.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=7132617)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering users/show
+  [4;35;1mLDAP: search (390.4ms)[0m: [0m{:attributes=>[], :filter=>"(&(memberUid=7132617)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 1218ms (View: 403, LDAP: 1192, DB: 0) | 200 OK [http://localhost/users/7132617]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-03-30 20:39:03) [GET]
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (5625.6ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+Rendering users/index
+Completed in 6893ms (View: 183, LDAP: 5626, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-30 20:39:14) [GET]
+  Parameters: {"id"=>"1111117"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (751.5ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=1111117)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering users/show
+  [4;35;1mLDAP: search (75.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(memberUid=1111117)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 846ms (View: 82, LDAP: 827, DB: 0) | 200 OK [http://localhost/users/1111117]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-30 20:39:18) [GET]
+  Parameters: {"id"=>"1111140"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (724.0ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=1111140)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering users/show
+  [4;35;1mLDAP: search (71.0ms)[0m: [0m{:attributes=>[], :filter=>"(&(memberUid=1111140)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 814ms (View: 77, LDAP: 795, DB: 0) | 200 OK [http://localhost/users/1111140]
+
+
+Processing GroupsController#index (for 127.0.0.1 at 2010-03-30 20:39:23) [GET]
+  [4;35;1mLDAP: search (749.6ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=*)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering groups/index
+Completed in 782ms (View: 6, LDAP: 750, DB: 0) | 200 OK [http://localhost/groups]
+
+
+Processing GroupsController#index (for 127.0.0.1 at 2010-03-30 20:39:47) [GET]
+  [4;35;1mLDAP: search (674.5ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=*)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering groups/index
+Completed in 714ms (View: 13, LDAP: 675, DB: 0) | 200 OK [http://localhost/groups]
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 20:39:51) [GET]
+  Parameters: {"id"=>"Tech"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/groups_controller.rb:8:in `params'
+  app/controllers/groups_controller.rb:8:in `show'
+
+Rendered rescues/_trace (148.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:42:58) [GET]
+  Parameters: {"id"=>"Tech"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/groups_controller.rb:8:in `params'
+  app/controllers/groups_controller.rb:8:in `show'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-03-30 21:43:10) [GET]
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (5226.0ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+Rendering users/index
+Completed in 6517ms (View: 186, LDAP: 5226, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-30 21:43:22) [GET]
+  Parameters: {"id"=>"1111140"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (799.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=1111140)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering users/show
+  [4;35;1mLDAP: search (68.4ms)[0m: [0m{:attributes=>[], :filter=>"(&(memberUid=1111140)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 887ms (View: 75, LDAP: 868, DB: 0) | 200 OK [http://localhost/users/1111140]
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:43:26) [GET]
+  Parameters: {"id"=>"Tech"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/groups_controller.rb:8:in `params'
+  app/controllers/groups_controller.rb:8:in `show'
+
+Rendered rescues/_trace (40.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:44:00) [GET]
+  Parameters: {"id"=>"Tech"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/groups_controller.rb:8:in `params'
+  app/controllers/groups_controller.rb:8:in `show'
+
+Rendered rescues/_trace (44.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:44:06) [GET]
+  Parameters: {"id"=>"tech"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/groups_controller.rb:8:in `params'
+  app/controllers/groups_controller.rb:8:in `show'
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:45:28) [GET]
+  Parameters: {"id"=>"Tech"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/groups_controller.rb:8:in `params'
+  app/controllers/groups_controller.rb:8:in `show'
+
+Rendered rescues/_trace (41.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:45:30) [GET]
+  Parameters: {"id"=>"Tech"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/groups_controller.rb:8:in `params'
+  app/controllers/groups_controller.rb:8:in `show'
+
+Rendered rescues/_trace (41.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:45:31) [GET]
+  Parameters: {"id"=>"Tech"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/groups_controller.rb:8:in `params'
+  app/controllers/groups_controller.rb:8:in `show'
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:45:33) [GET]
+  Parameters: {"id"=>"Tech"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/groups_controller.rb:8:in `params'
+  app/controllers/groups_controller.rb:8:in `show'
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:45:45) [GET]
+  Parameters: {"id"=>"Tech"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/groups_controller.rb:8:in `params'
+  app/controllers/groups_controller.rb:8:in `show'
+
+Rendered rescues/_trace (47.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:48:50) [GET]
+  Parameters: {"id"=>"Tech"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/groups_controller.rb:8:in `params'
+  app/controllers/groups_controller.rb:8:in `show'
+
+Rendered rescues/_trace (40.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:49:04) [GET]
+  Parameters: {"id"=>"Tech"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/groups_controller.rb:8:in `params'
+  app/controllers/groups_controller.rb:8:in `show'
+
+Rendered rescues/_trace (41.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:49:16) [GET]
+  Parameters: {"id"=>"Tech"}
+
+NoMethodError (undefined method `users' for nil:NilClass):
+  app/controllers/groups_controller.rb:9:in `show'
+
+Rendered rescues/_trace (50.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-03-30 21:49:32) [GET]
+  Parameters: {"id"=>"Tech"}
+
+SyntaxError (/Users/ben/Dropbox/Programming/Projects/studio-interaction/admin-interface/app/controllers/groups_controller.rb:8: syntax error, unexpected ':', expecting ')'
+    @group = Group.find(params[]:id])
+                                 ^):
+  
+
+Rendered rescues/_trace (37.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:49:39) [GET]
+  Parameters: {"id"=>"Tech"}
+  [4;35;1mLDAP: search (92.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Tech)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+
+NoMethodError (undefined method `users' for #<Group:0x103458770>):
+  activeldap (1.2.1) lib/active_ldap/base.rb:861:in `method_missing'
+  app/controllers/groups_controller.rb:9:in `show'
+
+Rendered rescues/_trace (42.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:49:52) [GET]
+  Parameters: {"id"=>"Tech"}
+  [4;35;1mLDAP: search (86.0ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Tech)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering groups/show
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (8256.0ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7193354)(uid=7406973)(uid=7157649)(uid=7117835)(uid=7132617)(uid=7028557)(uid=5856333)(uid=7400150)(uid=7185130)(uid=7118180))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+
+ActionView::TemplateError (undefined local variable or method `user' for #<ActionView::Base:0x1030f4b60>) on line #10 of app/views/groups/show.rhtml:
+7:   <b>Members:</b>
+8:   <ul>
+9: 	<%   @members.each do |member| -%>
+10: 	  <li><%= link_to user.cn, user %></li>
+11: 	<%   end -%>
+12:   </ul>
+13: </p>
+
+    app/views/groups/show.rhtml:10:in `_run_rhtml_app47views47groups47show46rhtml'
+    activeldap (1.2.1) lib/active_ldap/association/collection.rb:25:in `each'
+    activeldap (1.2.1) lib/active_ldap/association/collection.rb:25:in `each'
+    app/views/groups/show.rhtml:9:in `_run_rhtml_app47views47groups47show46rhtml'
+
+Rendered rescues/_trace (164.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 21:50:27) [GET]
+  Parameters: {"id"=>"Tech"}
+  [4;35;1mLDAP: search (89.0ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Tech)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering groups/show
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (9607.5ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7193354)(uid=7406973)(uid=7157649)(uid=7117835)(uid=7132617)(uid=7028557)(uid=5856333)(uid=7400150)(uid=7185130)(uid=7118180))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 9749ms (View: 9648, LDAP: 18131, DB: 0) | 200 OK [http://localhost/groups/Tech]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-30 21:50:53) [GET]
+  Parameters: {"id"=>"7400150"}
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (852.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=7400150)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering users/show
+  [4;35;1mLDAP: search (324.7ms)[0m: [0m{:attributes=>[], :filter=>"(&(memberUid=7400150)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 1202ms (View: 336, LDAP: 1178, DB: 0) | 200 OK [http://localhost/users/7400150]
+
+
+Processing GroupsController#show (for 127.0.0.1 at 2010-03-30 22:06:08) [GET]
+  Parameters: {"id"=>"Tech"}
+  [4;35;1mLDAP: search (99.4ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Tech)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering groups/show
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (5823.3ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7406973)(uid=7157649)(uid=7117835)(uid=7132617)(uid=7028557)(uid=5856333)(uid=7185130)(uid=7118180))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 5962ms (View: 5854, LDAP: 5923, DB: 0) | 200 OK [http://localhost/groups/Tech]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-30 22:51:21) [GET]
+
+ActionController::RoutingError (No route matches "/directory" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing DirectoryController#index (for 127.0.0.1 at 2010-03-30 22:52:34) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing DirectoryController#index (for 127.0.0.1 at 2010-03-30 22:52:36) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing DirectoryController#show (for 127.0.0.1 at 2010-03-30 22:52:41) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mLDAP: search (88.6ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+
+ActionView::MissingTemplate (Missing template directory/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-30 22:52:51) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mLDAP: search (75.4ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (16298.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7123353)(uid=7123252)(uid=7185450)(uid=7038397)(uid=7052625)(uid=7111656)(uid=7020134)(uid=7111335)(uid=7026251)(uid=7028557)(uid=7137986)(uid=7106600)(uid=7018603)(uid=7048684)(uid=7185130)(uid=7118180)(uid=7193354))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+
+ActionView::TemplateError (undefined method `pin' for #<User:0x102bc0f90>) on line #20 of app/views/directory/show.xml.erb:
+17: 						<%   @members.each do |member| -%>
+18: 							<user id="<% member.id %>">
+19: 								<params>
+20: 									<param name="password" value="<% member.pin %>"/>
+21: 									<param name="vm-password" value="<% member.pin %>"/>
+22: 									<param name="vm-mailto" value="<% member.mail %>"/>
+23: 									<param name="vm-email-all-messages" value="true"/>
+
+    activeldap (1.2.1) lib/active_ldap/base.rb:861:in `method_missing'
+    app/views/directory/show.xml.erb:20
+    activeldap (1.2.1) lib/active_ldap/association/collection.rb:25:in `each'
+    activeldap (1.2.1) lib/active_ldap/association/collection.rb:25:in `each'
+    app/views/directory/show.xml.erb:17
+
+Rendered rescues/_trace (53.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-30 22:55:48) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mLDAP: search (75.6ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (16018.5ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7123353)(uid=7123252)(uid=7185450)(uid=7038397)(uid=7052625)(uid=7111656)(uid=7020134)(uid=7111335)(uid=7026251)(uid=7028557)(uid=7137986)(uid=7106600)(uid=7018603)(uid=7048684)(uid=7185130)(uid=7118180)(uid=7193354))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 16154ms (View: 16071, LDAP: 32557, DB: 0) | 200 OK [http://localhost/directory/show.xml]
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-30 22:56:32) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mLDAP: search (69.4ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (16331.3ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7123353)(uid=7123252)(uid=7185450)(uid=7038397)(uid=7052625)(uid=7111656)(uid=7020134)(uid=7111335)(uid=7026251)(uid=7028557)(uid=7137986)(uid=7106600)(uid=7018603)(uid=7048684)(uid=7185130)(uid=7118180)(uid=7193354))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 16922ms (View: 16844, LDAP: 16401, DB: 0) | 200 OK [http://localhost/directory/show.xml]
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-30 22:57:19) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mLDAP: search (79.2ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (15375.6ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7123353)(uid=7123252)(uid=7185450)(uid=7038397)(uid=7052625)(uid=7111656)(uid=7020134)(uid=7111335)(uid=7026251)(uid=7028557)(uid=7137986)(uid=7106600)(uid=7018603)(uid=7048684)(uid=7185130)(uid=7118180)(uid=7193354))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 15562ms (View: 15474, LDAP: 15455, DB: 0) | 200 OK [http://localhost/directory/show.xml]
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-30 23:01:38) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mLDAP: search (98.6ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (14594.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7123353)(uid=7123252)(uid=7185450)(uid=7038397)(uid=7052625)(uid=7111656)(uid=7020134)(uid=7111335)(uid=7026251)(uid=7028557)(uid=7137986)(uid=7106600)(uid=7018603)(uid=7048684)(uid=7185130)(uid=7118180)(uid=7193354))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 14777ms (View: 14648, LDAP: 14693, DB: 0) | 200 OK [http://localhost/directory/show.xml]
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-30 23:02:55) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mLDAP: search (95.8ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (15664.8ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7123353)(uid=7123252)(uid=7185450)(uid=7038397)(uid=7052625)(uid=7111656)(uid=7020134)(uid=7111335)(uid=7026251)(uid=7028557)(uid=7137986)(uid=7106600)(uid=7018603)(uid=7048684)(uid=7185130)(uid=7118180)(uid=7193354))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 15945ms (View: 15726, LDAP: 15761, DB: 0) | 200 OK [http://localhost/directory/show.xml]
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-30 23:03:31) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mLDAP: search (85.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+DEPRECATION WARNING: :foreign_key belongs_to(:many) option is deprecated since 1.1.0. Use :primary_key instead.. (called from belongs_to at /Library/Ruby/Gems/1.8/gems/activeldap-1.2.1/lib/active_ldap/associations.rb:70)
+  [4;35;1mLDAP: search (14049.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7123353)(uid=7123252)(uid=7185450)(uid=7038397)(uid=7052625)(uid=7111656)(uid=7020134)(uid=7111335)(uid=7026251)(uid=7028557)(uid=7137986)(uid=7106600)(uid=7018603)(uid=7048684)(uid=7185130)(uid=7118180)(uid=7193354))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Completed in 14197ms (View: 14104, LDAP: 14135, DB: 0) | 200 OK [http://localhost/directory/show.xml]
+
+
+Processing DirectoryController#view to xml (for 127.0.0.1 at 2010-03-31 12:32:32) [GET]
+
+ActionController::UnknownAction (No action responded to view. Actions: show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-31 12:32:53) [GET]
+Attempting to reconnect
+  [4;36;1mLDAP: connect (71.8ms)[0m: [0;1m{:with_start_tls=>false, :uri=>"ldap://192.168.180.116"}[0m
+  [4;35;1mLDAP: bind (109.4ms)[0m: [0m{:dn=>"cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk"}[0m
+Bound to ldap://192.168.180.116 by simple as cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk
+  [4;35;1mLDAP: search (131.4ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+  [4;35;1mLDAP: search (118.5ms)[0m: [0m{:attributes=>["subschemaSubentry"], :filter=>"objectClass=*", :base=>"", :scope=>:base}[0m
+  [4;35;1mLDAP: search (513.3ms)[0m: [0m{:attributes=>["objectClasses", "attributeTypes", "matchingRules", "matchingRuleUse", "dITStructureRules", "dITContentRules", "nameForms", "ldapSyntaxes"], :filter=>"(objectClass=subschema)", :base=>"cn=Subschema", :scope=>:base}[0m
+  [4;35;1mLDAP: search (70.7ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Tech)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+  [4;35;1mLDAP: search (14158.7ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7123353)(uid=7123252)(uid=7185450)(uid=7038397)(uid=7052625)(uid=7111656)(uid=7020134)(uid=7111335)(uid=7026251)(uid=7028557)(uid=7137986)(uid=7106600)(uid=7018603)(uid=7048684)(uid=7185130)(uid=7118180)(uid=7193354))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+
+ActionView::TemplateError (undefined method `pin' for #<User:0x10328cbd0>) on line #3 of app/views/directory/_user.xml.erb:
+1: <user id="<%= user.id %>">
+2: 	<params>
+3: 		<param name="password" value="<%= user.pin %>"/>
+4: 		<param name="vm-password" value="<%= user.pin %>"/>
+5: 		<param name="vm-mailto" value="<%= user.mail %>"/>
+6: 		<param name="vm-email-all-messages" value="true"/>
+
+    activeldap (1.2.1) lib/active_ldap/base.rb:861:in `method_missing'
+    app/views/directory/_user.xml.erb:3
+    activeldap (1.2.1) lib/active_ldap/association/proxy.rb:64:in `map'
+    activeldap (1.2.1) lib/active_ldap/association/collection.rb:25:in `each'
+    activeldap (1.2.1) lib/active_ldap/association/collection.rb:25:in `each'
+    app/views/directory/show.xml.erb:17
+
+Rendered rescues/_trace (66.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-31 12:33:37) [GET]
+  [4;35;1mLDAP: search (106.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+  [4;35;1mLDAP: search (76.8ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Tech)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+  [4;35;1mLDAP: search (16573.7ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7123353)(uid=7123252)(uid=7185450)(uid=7038397)(uid=7052625)(uid=7111656)(uid=7020134)(uid=7111335)(uid=7026251)(uid=7028557)(uid=7137986)(uid=7106600)(uid=7018603)(uid=7048684)(uid=7185130)(uid=7118180)(uid=7193354))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendered directory/_user (1.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+  [4;35;1mLDAP: search (9017.4ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7406973)(uid=7157649)(uid=7117835)(uid=7132617)(uid=7028557)(uid=5856333)(uid=7185130)(uid=7118180))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Completed in 25858ms (View: 25665, LDAP: 40948, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-31 12:45:30) [GET]
+  [4;35;1mLDAP: search (95.6ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+  [4;35;1mLDAP: search (152.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Tech)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+  [4;35;1mLDAP: search (16759.4ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7123353)(uid=7123252)(uid=7185450)(uid=7038397)(uid=7052625)(uid=7111656)(uid=7020134)(uid=7111335)(uid=7026251)(uid=7028557)(uid=7137986)(uid=7106600)(uid=7018603)(uid=7048684)(uid=7185130)(uid=7118180)(uid=7193354))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendered directory/_user (1.6ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (1.9ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.6ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (1.1ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+  [4;35;1mLDAP: search (8465.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7406973)(uid=7157649)(uid=7117835)(uid=7132617)(uid=7028557)(uid=5856333)(uid=7185130)(uid=7118180))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Completed in 25657ms (View: 25398, LDAP: 25474, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-31 13:38:17) [GET]
+  [4;35;1mLDAP: search (61.0ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+  [4;35;1mLDAP: search (114.9ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Tech)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+  [4;35;1mLDAP: search (15835.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7123353)(uid=7123252)(uid=7185450)(uid=7038397)(uid=7052625)(uid=7111656)(uid=7020134)(uid=7111335)(uid=7026251)(uid=7028557)(uid=7137986)(uid=7106600)(uid=7018603)(uid=7048684)(uid=7185130)(uid=7118180)(uid=7193354))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+  [4;35;1mLDAP: search (8815.2ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7406973)(uid=7157649)(uid=7117835)(uid=7132617)(uid=7028557)(uid=5856333)(uid=7185130)(uid=7118180))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+
+ActionView::TemplateError (undefined method `Phone' for #<User:0x1030eadb8>) on line #3 of app/views/directory/_user.xml.erb:
+1: <user id="<%= user.id %>">
+2: 	<params>
+3: 		<param name="password" value="<%= user.Phone %>"/>
+4: 		<param name="vm-password" value="<%= user.Phone %>"/>
+5: 		<param name="vm-mailto" value="<%= user.mail %>"/>
+6: 		<param name="vm-email-all-messages" value="true"/>
+
+    activeldap (1.2.1) lib/active_ldap/base.rb:861:in `method_missing'
+    app/views/directory/_user.xml.erb:3
+    app/views/directory/show.xml.erb:17
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-31 14:03:24) [GET]
+  [4;35;1mLDAP: search (7113.6ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+  [4;35;1mLDAP: search (116.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+  [4;35;1mLDAP: search (99.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Tech)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+
+ActionView::TemplateError (undefined method `Phone' for #<User:0x102def870>) on line #3 of app/views/directory/_user.xml.erb:
+1: <user id="<%= user.id %>">
+2: 	<params>
+3: 		<param name="password" value="<%= user.Phone %>"/>
+4: 		<param name="vm-password" value="<%= user.Phone %>"/>
+5: 		<param name="vm-mailto" value="<%= user.mail %>"/>
+6: 		<param name="vm-email-all-messages" value="true"/>
+
+    activeldap (1.2.1) lib/active_ldap/base.rb:861:in `method_missing'
+    app/views/directory/_user.xml.erb:3
+    app/views/directory/show.xml.erb:17
+
+Rendered rescues/_trace (184.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-31 14:10:29) [GET]
+  [4;35;1mLDAP: search (6025.3ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+  [4;35;1mLDAP: search (71.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+  [4;35;1mLDAP: search (112.6ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Tech)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+
+ActionView::TemplateError (undefined method `phone' for #<User:0x102dd7fe0>) on line #3 of app/views/directory/_user.xml.erb:
+1: <user id="<%= user.id %>">
+2: 	<params>
+3: 		<param name="password" value="<%= user.phone %>"/>
+4: 		<param name="vm-password" value="<%= user.phone %>"/>
+5: 		<param name="vm-mailto" value="<%= user.mail %>"/>
+6: 		<param name="vm-email-all-messages" value="true"/>
+
+    activeldap (1.2.1) lib/active_ldap/base.rb:861:in `method_missing'
+    app/views/directory/_user.xml.erb:3
+    app/views/directory/show.xml.erb:17
+
+Rendered rescues/_trace (182.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DirectoryController#show to xml (for 127.0.0.1 at 2010-03-31 14:10:51) [GET]
+  [4;35;1mLDAP: search (5180.8ms)[0m: [0m{:attributes=>[], :filter=>"(&(uid=*)(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Ignore error ActiveLdap::LdapError::SizelimitExceeded(Size Limit Exceeded): filter (&(uid=*)(objectClass=top)): attributes: []
+  [4;35;1mLDAP: search (113.8ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Committee)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+  [4;35;1mLDAP: search (93.0ms)[0m: [0m{:attributes=>[], :filter=>"(&(cn=Tech)(&(objectClass=top)(objectClass=posixGroup)))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendering directory/show
+Rendered directory/_user (1.5ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.5ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.5ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.9ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.8ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.4ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.3ms)
+Rendered directory/_user (0.2ms)
+Rendered directory/_user (0.3ms)
+  [4;35;1mLDAP: search (15916.0ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7123353)(uid=7123252)(uid=7185450)(uid=7038397)(uid=7052625)(uid=7111656)(uid=7020134)(uid=7111335)(uid=7026251)(uid=7028557)(uid=7137986)(uid=7106600)(uid=7018603)(uid=7048684)(uid=7185130)(uid=7118180)(uid=7193354))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendered directory/_group_user (0.7ms)
+Rendered directory/_group_user (0.3ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.3ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+  [4;35;1mLDAP: search (7677.1ms)[0m: [0m{:attributes=>[], :filter=>"(&(|(uid=7406973)(uid=7157649)(uid=7117835)(uid=7132617)(uid=7028557)(uid=5856333)(uid=7185130)(uid=7118180))(objectClass=top))", :base=>"ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk", :scope=>:sub}[0m
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Rendered directory/_group_user (0.1ms)
+Completed in 30676ms (View: 24235, LDAP: 67345, DB: 0) | 200 OK [http://localhost/]

@@ -1,0 +1,17 @@
+<user id="<%= user.id %>">
+	<params>
+		<param name="password" value="<%= user.pin %>"/>
+		<param name="vm-password" value="<%= user.pin %>"/>
+		<param name="vm-mailto" value="<%= user.mail %>"/>
+		<param name="vm-email-all-messages" value="true"/>
+		<param name="vm-attach-file" value="true"/>
+		<param name="vm-email-from" value="voicemail@fusefm.co.uk"/>
+	</params>
+	<variables>
+		<variable name="toll_allow" value="domestic,international,local"/>
+		<variable name="accountcode" value="<%= user.id %>"/>
+		<variable name="user_context" value="default"/>
+		<variable name="effective_caller_id_name" value="<%= user.cn %>"/>
+		<variable name="effective_caller_id_number" value="<%= user.id %>"/>
+	</variables>
+</user>

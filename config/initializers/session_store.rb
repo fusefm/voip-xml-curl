@@ -5,8 +5,8 @@
 # Make sure the secret is at least 30 characters and all random, 
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
-  :key         => '_voip-xml-curl_session',
-  :secret      => '0bf633219b6f14d247a52d4090582cddeaa9a37548badeb141c16d07781e2b669ad0278c3b7dba09ad2c7c2e02dd27da841548f9df5ab24e1f9a0916b1896f16'
+  :key         => '_admin-interface_session',
+  :secret      => '1eaf58a3554e1d4bf83baed4303fde2b280240ca9bfdaf95b65cc2b6b77e6e9bbe6ca31e301e1d8dd87b6057c46c1397895131ea4a937bc028d9255ce5d3edb8'
 }
 
 # Use the database for sessions instead of the cookie-based default,

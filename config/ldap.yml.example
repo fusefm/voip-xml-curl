@@ -1,0 +1,17 @@
+development:
+  host: 192.168.180.116
+  base: ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk
+  bind_dn: cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk
+  password: blah
+
+testing:
+  host: 127.0.0.1
+  base: ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk
+  bind_dn: cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk
+  password: blah
+
+production:
+  host: 127.0.0.1
+  base: ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk
+  bind_dn: cn=admin,dc=studio,dc=fusefm,dc=co,dc=uk
+  password: blah

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<document type="freeswitch/xml">
+	<section name="directory" description="User Directory">
+		<domain name="fusefm.co.uk">
+			<params>
+				<param name="dial-string" value="{presence_id=${dialed_user}@${dialed_domain}}${sofia_contact(${dialed_user}@${dialed_domain})}"/>
+			</params>
+
+			<variables>
+				<variable name="record_stereo" value="true"/>
+				<variable name="transfer_fallback_extension" value="operator"/>
+			</variables>
+			
+			<groups>
+				<group name="default">
+					<users>
+						<%= render :partial => "user", :collection => @members %>
+					</users>
+				</group>
+				<group name="committee">
+					<users>
+						<%= render :partial => "group_user", :collection => @committee_members %>
+					</users>
+				</group>
+				<group name="tech">
+					<users>
+						<%= render :partial => "group_user", :collection => @tech_members %>
+					</users>
+				</group>
+			</groups>
+		</domain>
+	</section>
+</document>
